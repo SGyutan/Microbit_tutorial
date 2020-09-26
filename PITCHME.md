@@ -42,8 +42,7 @@ MicrobitのLEDを使って表示します。
 乱数を使って条件分岐を行います。
 
 
-
-![microbit_lesson2](.\fig\microbit_lesson2.png)
+<img src=".\fig\microbit_lesson2.png" alt="microbit_lesson2" style="zoom: 20%;" />
 
 
 ---
