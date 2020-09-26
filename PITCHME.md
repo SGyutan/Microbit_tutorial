@@ -38,8 +38,6 @@ MicrobitのLEDを使って表示します。
 “ずっと”ブロックでは、繰り返し行われます。(※他のプログラム言語では“ずっと”は“while loop”といわれます。)
 
 ![microbit_lesson1](./fig/microbit_lesson1.png)
-<img src=".\fig\microbit_lesson1.png" alt="microbit_lesson1" style="zoom: 20%;" />
-
 
 ---
 ### Lesson 2  変数＆条件分岐＆繰り返し
@@ -47,8 +45,6 @@ MicrobitのLEDを使って表示します。
 乱数を使って条件分岐を行います。
 
 ![microbit_lesson2](./fig/microbit_lesson2.png)
-<img src=".\fig\microbit_lesson2.png" alt="microbit_lesson2" style="zoom: 20%;" />
-
 
 ---
 ### Lesson 3  イベント
@@ -57,18 +53,12 @@ MicrobitのLEDを使って表示します。
 
 ![microbit_lesson3](./fig/microbit_lesson3.png)
 
-<img src=".\fig\microbit_lesson3.png" alt="microbit_lesson3" style="zoom: 20%;" />
-
 ---
 ### Lesson 4 内臓センサー
 
 Microbitに内蔵されているセンサーの値を表示させます。
 
-
 ![microbit_lesson4](./fig/microbit_lesson4.png)
-<img src=".\fig\microbit_lesson4.png" alt="microbit_lesson4" style="zoom:25%;" />
-
-
 
 ---
 ### Lesson 5  無線通信
@@ -76,4 +66,4 @@ Microbitに内蔵されているセンサーの値を表示させます。
 Microbitを2つ使って無線通信を行います。
 送信側のAボタンを押すと「Hi」が送信側LEDに「Hi」が表示され、受信側のLEDにも「Hi」が表示されます。
 ![microbit_lesson5](./fig/microbit_lesson5.png)
-<img src=".\fig\microbit_lesson5.png" alt="microbit_lesson5" style="zoom:25%;" />
+
