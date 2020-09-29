@@ -51,7 +51,7 @@ MicrobitのLEDを使って表示します。
 ![microbit_lesson3](./fig/microbit_lesson3.png)
 
 ---
-### Lesson 4 内臓センサー
+### Lesson 4 内蔵センサー
 
 Microbitに内蔵されているセンサーの値を表示させます。
 
