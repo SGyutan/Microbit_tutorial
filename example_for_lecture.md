@@ -1,4 +1,6 @@
 # 授業に使えるかも？プログラム
+programing example for making  lecture course
+
 
 ## 「快適さとは」明るさ測定
 
