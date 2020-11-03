@@ -6,7 +6,7 @@
 
 動くかどうか試してみましょう。
 
-![microbit-Robot_lesson1](C:\Users\MtM\Downloads\microbit-Robot_lesson1.png)
+![microbit-Robot_lesson1](./fig/microbit-Robot_lesson1.png)
 
 ```javascript
 input.onButtonPressed(Button.A, function () {
@@ -37,7 +37,7 @@ Microbitに既に入っている音を鳴らしてみましょう。
 
 端子0をイヤホンの中心に、端子GNDを外側に接続します。
 
-![microbit-music](C:\Users\MtM\Downloads\microbit-music.png)
+![microbit-music](./fig/microbit-music.png)
 
 
 
@@ -61,7 +61,7 @@ basic.forever(function () {
 
 出力端子の変更が必要です。「入出力端子」->「その他」->「音を鳴らす端子を・・にする」を最初だけに置いてP2に変更してください。
 
-![microbit-music_krc](C:\Users\MtM\Downloads\microbit-music_krc.png)
+![microbit-music_krc](./fig/microbit-music_krc.png)
 
 
 
