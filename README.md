@@ -32,6 +32,8 @@ example_for_lecture
 
 授業で活用できそうなプログラムをのせてあります。
 
+内容がやや発展的に内容になります。
+
 ---
 
 advance_pluse
