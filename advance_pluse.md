@@ -80,3 +80,11 @@ basic.forever(function () {
 ```
 
 ---
+
+#### KRCの通常のプログラムに戻す方法
+
+microbit-krc_proto2_ext_dance_ver_1.hex
+のファイルをMicrobitにドロップアンドドロップしてください。
+MicrobitのLEDに「０」、「A」が表示されていれば元に戻っています。
+
+![microbit-Robot_reset](./fig/reset.png)
