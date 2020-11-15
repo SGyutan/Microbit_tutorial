@@ -1,4 +1,4 @@
-#KRCTOOL拡張ブロック追加方法
+# KRCTOOL拡張ブロック追加方法
 
 あらかじめMicrosoft Storeで「make code」で検索して[make code for micro:bit]をインストールする。
 
@@ -7,6 +7,8 @@ KRCのドライバーのライブラリーファイルを拡張に追加する�
 
 １．USBから「microbit-pxt-krc-motor-easy.hex」を自分のPCの中にコピーする
 
+※このファイルをドラックアンドドロップで読み込ませないでください。
+
 
 ２．makecodeを立ち上げ、拡張機能を押す
 
@@ -14,6 +16,7 @@ KRCのドライバーのライブラリーファイルを拡張に追加する�
 
 
 ３．拡張機能の一番下にスクロールし「ファイルを読み込む」を押す
+※一番下にあります。
 
 ![img](./fig/KRC_setup02.png)
 
