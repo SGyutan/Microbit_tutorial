@@ -1,6 +1,8 @@
 ### MicrobitのTutorial
 
-Base tutorial
+それぞれのドキュメントの説明
+
+#### Base tutorial
 
 このチュートリアルでは、Micro:bitのブロックエディターを使って、プログラミングの基本を学びます。
 
@@ -28,7 +30,7 @@ Base tutorial
 
 ---
 
-example_for_lecture
+#### example_for_lecture
 
 授業で活用できそうなプログラムをのせてあります。
 
@@ -36,8 +38,16 @@ example_for_lecture
 
 ---
 
-advance_pluse
+#### library_setup
 
-KRC開発のロボットボードを利用したプログラムです。
+KRCボードを使う際の機能拡張ファイルの設定方法です。
+
+---
+
+#### advance_pluse
+
+KRCボードを利用したプログラムです。
 
 ゆうゆうのアドバンスコース向けです。
+
+---
