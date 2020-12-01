@@ -6,19 +6,28 @@
 
 動くかどうか試してみましょう。
 
-![microbit-Robot_lesson1](./fig/microbit-Robot_lesson1.png)
+![microbit-Robot_lesson](./fig/microbit-KRC_robot_lesson.png)
+
+
 
 ```javascript
 input.onButtonPressed(Button.A, function () {
-    KRCmotor.FwdGo(1)
-    KRCmotor.FwdRotate(1)
-    KRCmotor.RevRotate(1)
+    KRCmotor.FwdGo(2)
+    KRCmotor.FwdRotate(2)
+    KRCmotor.RevRotate(2)
     KRCmotor.StopAll(1)
-    KRCmotor.RevGo(1)
+    KRCmotor.RevGo(2)
+})
+input.onButtonPressed(Button.B, function () {
+    KRCmotor.LeftTurn(2)
+    KRCmotor.RightTurn(2)
+    KRCmotor.LeftSpin(2)
+    KRCmotor.RightSpin(2)
+    KRCmotor.FwdGo(3)
+    KRCmotor.RevGo(3)
 })
 basic.showString("OK")
 basic.clearScreen()
-basic.showString("A")
 basic.forever(function () {
 	
 })
@@ -59,7 +68,7 @@ basic.forever(function () {
 
 #### KRCのボードを使う場合
 
-出力端子の変更が必要です。「入出力端子」->「その他」->「音を鳴らす端子を・・にする」を最初だけに置いてP2に変更してください。
+出力端子の変更が必要です。「入出力端子」->「その他」->「音を鳴らす端子を・・にする」を[「最初だけ」に置いて出力端子をP2に変更してください。
 
 ![microbit-music_krc](./fig/microbit-music_krc.png)
 
@@ -74,9 +83,8 @@ input.onButtonPressed(Button.B, function () {
     music.playTone(294, music.beat(BeatFraction.Whole))
     music.playTone(330, music.beat(BeatFraction.Whole))
 })
-basic.forever(function () {
-	
-})
+pins.analogSetPitchPin(AnalogPin.P2)
+
 ```
 
 ---

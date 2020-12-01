@@ -38,6 +38,25 @@ Microbitでカウンターを作成します。Aボタンを押すと1増え、A
 
 
 
+```javascript
+input.onButtonPressed(Button.A, function () {
+    count += 1
+    if (count == 10) {
+        count = 0
+    }
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.AB, function () {
+    count = 0
+    basic.showNumber(count)
+})
+let count = 0
+count = 0
+basic.showNumber(count)
+```
+
+
+
 
 
 最初だけででcountを0にします。この変数の箱の中には0が入ります。
@@ -60,6 +79,32 @@ Bボタンを押すとカウントダウンが始まります。
 
 
 
+```javascript
+input.onButtonPressed(Button.A, function () {
+    count += 1
+    if (count == 10) {
+        count = 0
+    }
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.AB, function () {
+    count = 0
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.B, function () {
+    while (count != 0) {
+        basic.pause(500)
+        count += -1
+        basic.showNumber(count)
+    }
+})
+let count = 0
+count = 0
+basic.showNumber(count)
+```
+
+
+
 Bボタンのプログラムは、countが0になるまで繰り返します。（0になると止まる）
 
 一時停止は、プログラムでは500ms（0.5s）としていますが、好きな時間に設定してください。
@@ -75,6 +120,35 @@ Bボタンのプログラムは、countが0になるまで繰り返します。�
 Bボタンの中のループを抜けた後に音を鳴らすブロックを置くと、カウントダウンが終わると音が鳴るようになります。
 
 ![microbit_count_timer_sound](./fig/microbit_count_timer_sound.png)
+
+
+
+```javascript
+input.onButtonPressed(Button.A, function () {
+    count += 1
+    if (count == 10) {
+        count = 0
+    }
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.AB, function () {
+    count = 0
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.B, function () {
+    while (count != 0) {
+        basic.pause(500)
+        count += -1
+        basic.showNumber(count)
+    }
+    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
+})
+let count = 0
+count = 0
+basic.showNumber(count)
+```
+
+
 
 
 ---
@@ -127,6 +201,34 @@ Lesson5で無線送信のプログラムを作成しました。送信できる�
 ![microbit_communication](./fig/microbit_communication.png)
 
 
+
+```javascript
+radio.onReceivedNumber(function (receivedNumber) {
+    basic.showNumber(receivedNumber)
+})
+input.onButtonPressed(Button.A, function () {
+    count += 1
+    if (count == 10) {
+        count = 0
+    }
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.AB, function () {
+    count = 0
+    basic.showNumber(count)
+})
+input.onButtonPressed(Button.B, function () {
+    radio.sendNumber(count)
+    basic.showString("S")
+    count = 0
+})
+let count = 0
+count = 0
+radio.setGroup(1)
+basic.showNumber(count)
+```
+
+
 Aボタンを押して送る数字を指定します。（送る数字を間違えたときはABボタンでクリアーにできます。）
 
 Bボタンを押して送信します。
@@ -171,6 +273,23 @@ ICキャッシュカード，おサイフケータイ
 ![microbit_signal](./fig/microbit_signal.png)
 
 
+
+```javascript
+basic.showString("OK")
+basic.forever(function () {
+    pins.digitalWritePin(DigitalPin.P2, 1)
+    basic.pause(3000)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+    pins.digitalWritePin(DigitalPin.P1, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P1, 0)
+    pins.digitalWritePin(DigitalPin.P0, 1)
+    basic.pause(3000)
+    pins.digitalWritePin(DigitalPin.P0, 0)
+})
+```
+
+
 外部の端子に信号を送るプログラムです。
 
 Microbitには、大きい端子が4つあります。「0、1、2、3V、GND」
@@ -213,6 +332,27 @@ Microbitには、大きい端子が4つあります。「0、1、2、3V、GND」
 回数を指定する繰り返しを使ってプログラムを作ります。
 
 ![microbit_signal_blinking](./fig/microbit_signal_blinking.png)
+
+
+
+```javascript
+basic.showString("OK")
+basic.forever(function () {
+    for (let index = 0; index < 5; index++) {
+        pins.digitalWritePin(DigitalPin.P2, 1)
+        basic.pause(200)
+        pins.digitalWritePin(DigitalPin.P2, 0)
+        basic.pause(200)
+    }
+    pins.digitalWritePin(DigitalPin.P1, 1)
+    basic.pause(500)
+    pins.digitalWritePin(DigitalPin.P1, 0)
+    pins.digitalWritePin(DigitalPin.P0, 1)
+    basic.pause(2000)
+    pins.digitalWritePin(DigitalPin.P0, 0)
+})
+
+```
 
 点灯する間隔を変えるプログラムを作ってみましょう。
 
