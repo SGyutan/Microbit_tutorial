@@ -165,3 +165,30 @@ radio.setGroup(1)
 ```
 
 ---
+
+## その他
+
+### 音楽を鳴らす
+
+Microbitでは音を鳴らすことができます。
+Microbitに既に入っている音を鳴らしてみましょう。
+
+端子0をイヤホンの中心に、端子GNDを外側に接続します。
+
+![microbit-music](./fig/microbit-music.png)
+
+
+
+```javascript
+input.onButtonPressed(Button.A, function () {
+    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
+})
+input.onButtonPressed(Button.B, function () {
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+})
+basic.forever(function () {
+	
+})
+```
