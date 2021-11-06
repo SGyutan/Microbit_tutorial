@@ -30,15 +30,18 @@
 
 ---
 
-#### example_for_lecture
+#### Example for lecture
+[README example_for_lecture](./example_for_lecture.md)
 
-授業で活用できそうなプログラムをのせてあります。
+授業で活用できそうなプログラム例を記載しています。
 
 やや発展的に内容になります。
 
 ---
 
-#### library_setup
+#### KRC library setup
+
+[README KRC_library_setup](./KRC_library_setup.md)
 
 KRCボード：久喜ロボットクラブで独自に開発したボード
 
@@ -46,7 +49,9 @@ KRCボードを使う際の機能拡張ファイルの設定方法です。
 
 ---
 
-#### advance_pluse
+#### Advance corce program
+
+[README Advance corce program](./advance_pluse.md)
 
 KRCボードを利用したプログラムです。
 

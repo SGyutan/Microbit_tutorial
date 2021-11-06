@@ -1,10 +1,12 @@
-#アドバンスコース　追加プログラム
-### ロボットを動かす
+# アドバンスコース
+
+## ロボットを動かす(動作確認)
 
 拡張ブロックを追加します。
 追加方法は、「KRC拡張ブロックの追加方法」のドキュメントを参照してください。
 
 動くかどうか試してみましょう。
+ロボットの動く方向（右、左、前進、後進）が思っていた通りに動いているか確認してください。
 
 ![microbit-Robot_lesson](./fig/microbit-KRC_robot_lesson.png)
 
@@ -33,9 +35,52 @@ basic.forever(function () {
 })
 ```
 
+課題：コースをうまく移動できるように時間を調節してプログラムを組んでみてください。
 
 
-コースをうまく移動できるように時間を調節してプログラムを組んでみてください。
+---
+## 光強度の測定と閾値の決定
+![light](./fig/light_check.PNG)
+
+
+```javascript
+basic.forever(function () {
+    led.plotBarGraph(
+    input.lightLevel(),
+    255
+    )
+})
+```
+
+ロボットにつけた時に明るさを測定してください。
+
+
+
+---
+## 光制御プログラム
+![light＿Cont](./fig/light_cont.PNG)
+
+
+
+```javascript
+basic.forever(function () {
+    led.plotBarGraph(
+    input.lightLevel(),
+    255
+    )
+    if (input.lightLevel() >= 150) {
+        KRCmotor.FwdGo(0.5)
+    } else {
+        if (Math.randomBoolean()) {
+            KRCmotor.LeftSpin(0.5)
+        } else {
+            KRCmotor.RightSpin(0.5)
+        }
+    }
+})
+```
+
+
 
 ---
 
@@ -44,7 +89,7 @@ basic.forever(function () {
 Microbitでは音を鳴らすことができます。
 Microbitに既に入っている音を鳴らしてみましょう。
 
-端子0をイヤホンの中心に、端子GNDを外側に接続します。
+端子0をイヤホンの中心に、端子GNDを外側に接続します。(V2では不要です。)
 
 ![microbit-music](./fig/microbit-music.png)
 
