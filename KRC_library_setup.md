@@ -49,5 +49,7 @@ microbit-krc_radio_controller.hex
 MicrobitのLEDに「０」が表示されます。
 ABボタンを両方押して無線チャンネルを選んで下さい。ロボット側も同じようにABボタンを両方押して同じ無線チャンネルにしてください。
 
+詳しくは、[microbit基板の使い方.pdf](./KRC_library/microbit基板の使い方.pdf)を参照してください。
+
 
 
