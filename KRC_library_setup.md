@@ -5,7 +5,9 @@
 KRCのドライバーのライブラリーファイルを拡張に追加する方法
 
 
-１．USBから「microbit-pxt-krc-motor-easy.hex」を自分のPCの中にコピーする
+１．KRC_Libraryホルダーにある「microbit-pxt-krc-motor-easy.hex」を自分のPCの中にコピーする。
+
+[KRC_Library](./KRC_Library)
 
 ※このファイルをドラックアンドドロップで読み込ませないでください。
 
@@ -46,5 +48,6 @@ microbit-krc_radio_controller.hex
 
 MicrobitのLEDに「０」が表示されます。
 ABボタンを両方押して無線チャンネルを選んで下さい。ロボット側も同じようにABボタンを両方押して同じ無線チャンネルにしてください。
+
 
 

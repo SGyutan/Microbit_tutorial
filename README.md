@@ -4,6 +4,8 @@
 
 #### Base tutorial
 
+[Base Tutorial](./base_tutorial.md)
+
 このチュートリアルでは、Micro:bitのブロックエディターを使って、プログラミングの基本を学びます。
 
 プログラミングの基本は以下の通りです。（一般的なプログラミング言語の教科書に書かれているものです。）
@@ -30,15 +32,6 @@
 
 ---
 
-#### Example for lecture
-[README example_for_lecture](./example_for_lecture.md)
-
-授業で活用できそうなプログラム例を記載しています。
-
-やや発展的に内容になります。
-
----
-
 #### KRC library setup
 
 [README KRC_library_setup](./KRC_library_setup.md)
@@ -49,12 +42,21 @@ KRCボードを使う際の機能拡張ファイルの設定方法です。
 
 ---
 
-#### Advance corce program
+#### Advance course program
 
-[README Advance corce program](./advance_pluse.md)
+[README Advance course program](./advance_course.md)
 
 KRCボードを利用したプログラムです。
 
 「ゆうゆう」のアドバンスコース向けです。
+
+---
+
+#### Example for lecture
+[Example_for_lecture](./example_for_lecture.md)
+
+授業で活用できそうなプログラム例を記載しています。
+
+やや発展的に内容になります。
 
 ---

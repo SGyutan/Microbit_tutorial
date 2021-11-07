@@ -1,3 +1,8 @@
+## Microbitを2つ利用して無線コントロール
+BLTの機能を使って無線通信を行います。
+
+---
+
 ### コントローラー側
 
 通信チャンネルをあらかじめ指定
@@ -138,8 +143,7 @@ def on_forever():
     yacc = Math.map(input.acceleration(Dimension.Y), -1023, 1023, -40, 40)
 basic.forever(on_forever)
 ```
-
-
+---
 
 ### ロボット側
 
@@ -241,4 +245,4 @@ radio.set_group(5)
 basic.show_number(5)
 duration_time = 0.3
 ```
-
+---
