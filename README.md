@@ -1,12 +1,14 @@
-### MicrobitのTutorial
+# MicrobitのTutorial
 
 それぞれのドキュメントの説明
 
-#### Base tutorial
+---
 
-[Base Tutorial](./base_tutorial.md)
+## Base tutorial
 
 このチュートリアルでは、Micro:bitのブロックエディターを使って、プログラミングの基本を学びます。
+
+[Base Tutorial](./base_tutorial.md)
 
 プログラミングの基本は以下の通りです。（一般的なプログラミング言語の教科書に書かれているものです。）
 
@@ -31,32 +33,46 @@
 （7）、（8）はマイクロビットならではのものになります。
 
 ---
+## Tutorial R3 version
 
-#### KRC library setup
+令和3年度アドバンスコースのMicrobitのチュートリアルです。
 
-[README KRC_library_setup](./KRC_library_setup.md)
+[Tutorial R3 version](./tutorial_R3_version.md)
+
+---
+
+## KRC library setup
 
 KRCボード：久喜ロボットクラブで独自に開発したボード
 
 KRCボードを使う際の機能拡張ファイルの設定方法です。
 
+[KRC library setup](./KRC_library_setup.md)
+
 ---
 
-#### Advance course program
-
-[README Advance course program](./advance_course.md)
+## Advance course program
 
 KRCボードを利用したプログラムです。
+(「ゆうゆう」のアドバンスコース向け)
 
-「ゆうゆう」のアドバンスコース向けです。
+[Advance course program](./advance_course.md)
 
 ---
 
-#### Example for lecture
-[Example_for_lecture](./example_for_lecture.md)
+## School Song
+
+校歌をMicrobitでプログラミングするときの例です。
+
+[School Song](./school_song.md)
+
+---
+
+## Example for lecture
 
 授業で活用できそうなプログラム例を記載しています。
-
 やや発展的に内容になります。
+
+[Example for lecture](./example_for_lecture.md)
 
 ---
