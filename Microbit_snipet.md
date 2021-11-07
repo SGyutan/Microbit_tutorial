@@ -1,6 +1,6 @@
 # Microbit snipet
 
-### 初期設定
+## 初期設定
 
 最初だけブロック内にA、Bボタンを使って初期値を設定する。
 
@@ -49,7 +49,7 @@ Bボタンを押すと決定してループを抜ける。
 
 ---
 
-### Micro:bitのボタンのOn/Offスイッチ動作
+## Micro:bitのボタンのOn/Offスイッチ動作
 
 Microbitでロボットなどを操作する際に、ボタンの数が足りなくなることがあります。
 
@@ -79,8 +79,7 @@ basic.show_number(status)
 ---
 
 
-
-### コンパスの使い書いた
+## コンパスの使い書いた
 
 [micro:bitを構成する部品(背面)](https://webcache.googleusercontent.com/search?q=cache:bLXc4MjqfqQJ:https://sanuki-tech.net/micro-bit/overview/hardware-back/+&cd=2&hl=ja&ct=clnk&gl=jp&client=firefox-b-d)
 
@@ -124,11 +123,9 @@ basic.forever(on_forever)
 
 ---
 
-### messaging test  name-value
+## messaging test  name-value
 
 name,  valueで通信する
-
-
 
 
 
