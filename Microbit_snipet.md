@@ -123,7 +123,7 @@ basic.forever(on_forever)
 
 ---
 
-## messaging test  name-value
+## BLEのname-valueを使った通信
 
 name,  valueで通信する
 

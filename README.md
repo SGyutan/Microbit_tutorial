@@ -6,7 +6,7 @@
 
 ## Base tutorial
 
-このチュートリアルでは、Micro:bitのブロックエディターを使って、プログラミングの基本を学びます。
+Micro:bitのブロックエディターを使って、プログラミングの基本を学びます。
 
 [Base Tutorial](./base_tutorial.md)
 
@@ -35,7 +35,7 @@
 ---
 ## Tutorial R3 version
 
-令和3年度アドバンスコースのMicrobitのチュートリアルです。
+令和3年度アドバンスコース向けMicrobitのチュートリアルです。
 
 [Tutorial R3 version](./tutorial_R3_version.md)
 
@@ -43,9 +43,8 @@
 
 ## KRC library setup
 
-KRCボード：久喜ロボットクラブで独自に開発したボード
+久喜ロボットクラブで独自に開発したボード(KRCボード)の機能拡張ライブラリーの設定方法についてです。
 
-KRCボードを使う際の機能拡張ファイルの設定方法です。
 
 [KRC library setup](./KRC_library_setup.md)
 
@@ -53,8 +52,10 @@ KRCボードを使う際の機能拡張ファイルの設定方法です。
 
 ## Advance course program
 
-KRCボードを利用したプログラムです。
+KRCボードを利用した2足歩行ロボットのプログラムです。
 (「ゆうゆう」のアドバンスコース向け)
+
+Tutorial R3 versionで理解を深めた後に試してください。
 
 [Advance course program](./advance_course.md)
 
