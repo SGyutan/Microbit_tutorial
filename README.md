@@ -33,11 +33,16 @@ Micro:bitのブロックエディターを使って、プログラミングの�
 （7）、（8）はマイクロビットならではのものになります。
 
 ---
-## Tutorial R3 version
 
-令和3年度アドバンスコース向けMicrobitのチュートリアルです。
+## Base tutorial R3
 
-[Tutorial R3 version](./tutorial_R3_version.md)
+令和3年度アドバンスコース向けMicrobitのチュートリアルです。(Base Tutorialの代わりにこちらを使います。)
+
+[Base tutorial R3](./base_tutorial_R3.md)
+
+
+自宅学習用参考プログラム : 
+[micro:bitで動作するサンプルプログラム](https://sanuki-tech.net/micro-bit/appendix-sample-prog)
 
 ---
 
@@ -53,7 +58,7 @@ Micro:bitのブロックエディターを使って、プログラミングの�
 ## Advance course program
 
 KRCボードを利用した2足歩行ロボットのプログラムです。
-(「ゆうゆう」のアドバンスコース向け)
+(令和3年度アドバンスコースで利用します。)
 
 Tutorial R3 versionで理解を深めた後に試してください。
 
