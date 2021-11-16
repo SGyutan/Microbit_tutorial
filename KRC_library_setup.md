@@ -5,11 +5,11 @@
 KRCのドライバーのライブラリーファイルを拡張に追加する方法
 
 
-１．KRC_Libraryホルダーにある「microbit-pxt-krc-motor-easy.hex」を自分のPCの中にコピーする。
+１．KRC_Libraryホルダーにある「microbit-pxt-krc-motor-easy.hex」を自分のPCにコピーする。
 
 [KRC_Library](./KRC_Library)
 
-※このファイルをドラックアンドドロップで読み込ませないでください。
+※このファイルをドラックアンドドロップで読み込ませないでください!
 
 
 ２．makecodeを立ち上げ、拡張機能を押す
@@ -36,7 +36,10 @@ KRCのドライバーのライブラリーファイルを拡張に追加する�
 
 microbit-KRC_robot_.hex
 のファイルをMicrobitにドロップアンドドロップしてください。
+
 MicrobitのLEDに「０」、「A」が表示されていれば元に戻っています。
+
+※microbit-krc_proto2_ext_dance_ver_1.hexとmicrobit-KRC_robot_.hexは同じファイルです。
 
 ![microbit-Robot_reset](./fig/reset.png)
 
