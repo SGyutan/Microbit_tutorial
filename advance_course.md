@@ -6,7 +6,7 @@
 追加方法は、「KRC拡張ブロックの追加方法」のドキュメントを参照してください。
 
 動くかどうか試してみましょう。
-ロボットの動く方向（右、左、前進、後進）が思っていた通りに動いているか確認してください。
+ロボットの動く方向（右、左、前進、後進）が思った通りに動いているか確認してください。
 
 ![microbit-Robot_lesson](./fig/microbit-KRC_robot_lesson.png)
 
@@ -58,6 +58,10 @@ basic.forever(function () {
 
 ---
 ## 光制御プログラム
+
+光を当てる（閾値より強い光を当てる）と前に進みます。光が当たっていないときには、光のある方を探索します。
+
+
 ![light＿Cont](./fig/light_cont.PNG)
 
 
@@ -80,43 +84,31 @@ basic.forever(function () {
 })
 ```
 
+探索プログラムを考えてみてください。
 
 
 ---
 
-### 音楽を鳴らす
 
-Microbitでは音を鳴らすことができます。
-Microbitに既に入っている音を鳴らしてみましょう。
+#### KRCの通常のプログラム（ボタンスイッチの制御）に戻す方法
 
-端子0をイヤホンの中心に、端子GNDを外側に接続します。(V2では不要です。)
+microbit-krc_proto2_ext_dance_ver_1.hex
+のファイルをMicrobitにドロップアンドドロップしてください。
+MicrobitのLEDに「０」、「A」が表示されていれば元に戻っています。
 
-![microbit-music](./fig/microbit-music.png)
-
-
-
-```javascript
-input.onButtonPressed(Button.A, function () {
-    music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.Once)
-})
-input.onButtonPressed(Button.B, function () {
-    music.playTone(262, music.beat(BeatFraction.Whole))
-    music.playTone(294, music.beat(BeatFraction.Whole))
-    music.playTone(330, music.beat(BeatFraction.Whole))
-})
-basic.forever(function () {
-	
-})
-```
+![microbit-Robot_reset](./fig/reset.png)
 
 
+---
 
-#### KRCのボードを使う場合
+
+#### サウンド出力でKRCのボードを使う場合
 
 出力端子の変更が必要です。「入出力端子」->「その他」->「音を鳴らす端子を・・にする」を[「最初だけ」に置いて出力端子をP2に変更してください。
 
-![microbit-music_krc](./fig/microbit-music_krc.png)
+KRCボードは、出力端子のP0をほかの制御に使っているために、そのまま使用すると誤作動を起こします。
 
+![microbit-music_krc](./fig/microbit-music_krc.png)
 
 
 ```javascript
@@ -133,11 +125,3 @@ pins.analogSetPitchPin(AnalogPin.P2)
 ```
 
 ---
-
-#### KRCの通常のプログラムに戻す方法
-
-microbit-krc_proto2_ext_dance_ver_1.hex
-のファイルをMicrobitにドロップアンドドロップしてください。
-MicrobitのLEDに「０」、「A」が表示されていれば元に戻っています。
-
-![microbit-Robot_reset](./fig/reset.png)
