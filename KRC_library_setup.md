@@ -1,9 +1,22 @@
-# KRCTOOL拡張ブロック追加方法
+# KRC拡張ブロック追加方法
 
 あらかじめMicrosoft Storeで「make code」で検索して[make code for micro:bit]をインストールする。
 
-KRCのドライバーのライブラリーファイルを拡張に追加する方法
+### 拡張プログラム
 
+- Microbitでのプログラミング用: 
+    microbit-pxt-krc-motor-easy.hex
+
+- コントローラー制御・ティーチング用（通常プログラム）: 
+microbit-KRC_robot_.hex
+（microbit-krc_proto2_ext_dance_ver_1.hex）
+
+- 無線通信用操作用: 
+microbit-krc_radio_controller.hex
+
+---
+
+## Microbitでのプログラミング用ライブラリー
 
 １．KRC_Libraryホルダーにある「microbit-pxt-krc-motor-easy.hex」を自分のPCにコピーする。
 
@@ -42,9 +55,9 @@ KRCのドライバーのライブラリーファイルを拡張に追加する�
 
 ![img](./fig/KRC_setup_NG_JS.png)
 
+---
 
-
-# KRCの通常プログラムに戻す方法
+## コントローラー制御・ティーチング用（通常プログラム）
 
 microbit-KRC_robot_.hex
 のファイルをMicrobitにドロップアンドドロップしてください。
@@ -55,9 +68,13 @@ MicrobitのLEDに「０」、「A」が表示されていれば元に戻って�
 
 ![microbit-Robot_reset](./fig/reset.png)
 
-# KRCの通常プログラムでの無線操作
+---
 
-ロボット側のMicrobitにKRCの通常プログラムを入れ、MicrobitのLED「A」モードになっている場合、以下のプログラムをもう一つのMicrobitに入れることで無線操作できます。
+## 無線通信用操作用
+
+Microbitが2個必要用です。
+ロボット側のMicrobitにKRCのコントローラー制御・ティーチング用（通常プログラム）を入れ、MicrobitのLED「A」モードになっている場合、以下のプログラムをもう一つのMicrobitに入れることで無線操作できます。
+
 microbit-krc_radio_controller.hex
 のファイルを操縦側のMicrobitにドロップアンドドロップしてください。
 
