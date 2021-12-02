@@ -18,9 +18,9 @@ microbit-krc_radio_controller.hex
 
 ## Microbitでのプログラミング用ライブラリー
 
-１．KRC_Libraryホルダーにある「microbit-pxt-krc-motor-easy.hex」を自分のPCにコピーする。
+１．KRC_Library/for_programingにある「microbit-pxt-krc-for-programing.hex」を自分のPCにコピーする。
 
-[KRC_Library](./KRC_Library)
+[KRC_Library/for_programing](./KRC_Library/for_programing/)
 
 ※このファイルをドラックアンドドロップで読み込ませないでください!
 
@@ -35,7 +35,7 @@ microbit-krc_radio_controller.hex
 
 ![img](./fig/KRC_setup02.png)
 
-４．「参照」を押してコピーした「microbit-pxt-krc-motor-easy.hex」ファイルを指定して、つづけるを押す
+４．「参照」を押してPCにコピーした「microbit-pxt-krc-for-programing.hex」ファイルを指定して、つづけるを押す
 
 ![img](./fig/KRC_setup03.png)
 
@@ -46,7 +46,7 @@ microbit-krc_radio_controller.hex
 
 ### ★注意事項
 
-アプリまたはオンラインエディタの最初で、「microbit-pxt-krc-motor-easy.hex」を開いてしまうと、ブロックの開発モードになってしまい、通常のブロック利用ができません。
+アプリまたはオンラインエディタの最初で、「microbit-pxt-krc-for-programing.hex」を開いてしまうと、ブロックの開発モードになってしまい、通常のブロック利用ができません。
 必ず新しいプロジェクトで開いたあとで、「拡張機能」→「ファイルを読み込む」から開いてください。
 
 ![img](./fig/KRC_setup_NG.png)
@@ -59,14 +59,16 @@ microbit-krc_radio_controller.hex
 
 ## コントローラー制御・ティーチング用（通常プログラム）
 
-microbit-KRC_robot_.hex
+KRC_Library/for_button_cotrol にある「microbit-KRC_robot_.hex」
 のファイルをMicrobitにドロップアンドドロップしてください。
+
+[KRC_Library/for_button_cotrol](./KRC_Library/for_button_control/)
 
 MicrobitのLEDに「０」、「A」が表示されていれば元に戻っています。
 
-※microbit-krc_proto2_ext_dance_ver_1.hexとmicrobit-KRC_robot_.hexは同じファイルです。
-
 ![microbit-Robot_reset](./fig/reset.png)
+
+詳しくは、[microbit_for_button_controll.pdf](./KRC_library/microbit_for_button_controll.pdf)を参照してください。
 
 ---
 
@@ -81,7 +83,7 @@ microbit-krc_radio_controller.hex
 MicrobitのLEDに「０」が表示されます。
 ABボタンを両方押して無線チャンネルを選んで下さい。ロボット側も同じようにABボタンを両方押して同じ無線チャンネルにしてください。
 
-詳しくは、[microbit基板の使い方.pdf](./KRC_library/microbit基板の使い方.pdf)を参照してください。
+詳しくは、[microbit_for_button_controll.pdf](./KRC_library/microbit_for_button_controll.pdf)を参照してください。
 
 
 
