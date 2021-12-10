@@ -1,14 +1,13 @@
 ### さいころ
 
+ポイント：イベント処理（Aボタンを押す）、乱数
+
 乱数を使ってさいころの数字を表示します。
 
 Aボタンを押すごとにランダムに数字が表示されます。
 
-ポイント：イベント処理（Aボタンを押す）、乱数
 
-
-
-<img src="./figs/さいころ1.PNG" alt="さいころ1" style="zoom:67%;" />
+<img src="./figs/saikoro1.PNG" alt="saikoro1" style="zoom:67%;" />
 
 
 
@@ -29,6 +28,8 @@ basic.forever(function () {
 
 ### じゃんけん
 
+ポイント：変数、条件分岐
+
 このプログラムを作る前に
 
 変数について:
@@ -37,7 +38,7 @@ basic.forever(function () {
 
 例えば、こんなプログラムを作ってください。
 
-<img src="./figs/変数.PNG" alt="変数" style="zoom:67%;" />
+<img src="./figs/hensuu.PNG" alt="hennsuu" style="zoom:67%;" />
 
 ```Javascript
 let x = 0
@@ -63,7 +64,7 @@ Bボタンを押すと変数Xに書き込まれている数字を見ることが
 
 じゃんけん表示を先ほどの乱数と変数と条件分けで作ってみましょう。
 
-<img src="./figs/じゃんけん.PNG" alt="じゃんけん"  />
+<img src="./figs/jyanken.PNG" alt="jyanken"  />
 
 ```javascript
 let x = 0
@@ -116,9 +117,9 @@ Microbitには、いくつかのセンサーがついています。その一つ
 
 ※なおこの明るさ測定は、2019年に太田小にて行われた家庭科の研究授業「快適さとは」に使われました。
 
-[Microbitで明るさ測定　小学校家庭科授業「快適さ」とは](https://qiita.com/Gyutan/items/2d7d356f7321c3d76682)
+[Microbitで明るさ測定 小学校家庭科授業「快適さ」とは](https://qiita.com/Gyutan/items/2d7d356f7321c3d76682)
 
-<img src="./figs/明るさ.PNG" alt="明るさ" style="zoom:67%;" />
+<img src="./figs/akarusa.PNG" alt="akarusa" style="zoom:67%;" />
 
 ```
 basic.showIcon(IconNames.Yes)
@@ -164,7 +165,7 @@ basic.forever(function () {
 
 無線で数字を送ります。
 
-<img src="./figs/無線1.PNG" alt="無線1" style="zoom:67%;" />
+<img src="./figs/musen1.PNG" alt="musen1" style="zoom:67%;" />
 
 ```Javascript
 radio.onReceivedNumber(function (receivedNumber) {
@@ -209,7 +210,7 @@ Aボタンを押すと数字が表示され、その後グラフが表示され�
 
 グラフの最大値を255にします。
 
-<img src="./figs/無線2.PNG" alt="無線2" style="zoom:80%;" />
+<img src="./figs/musen2.PNG" alt="musen2" style="zoom:80%;" />
 
 
 
