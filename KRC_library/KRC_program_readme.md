@@ -16,3 +16,7 @@
 - microbit-krc_radio_controller.hex
 
 ---
+
+## programing template
+
+KRC_programing_template.hex
